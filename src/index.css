@@ -1,1 +1,20 @@
+@import url("https://cdn.jsdelivr.net/npm/@vercel/fonts/geist/font.css");
 @import "tailwindcss";
+
+:root {
+  --font-geist: "Geist", sans-serif;
+  --navbar-height: 100px;
+}
+
+@theme {
+  --color-navy-blue: #0a0f2c;
+}
+
+body {
+  font-family: var(--font-geist);
+}
+
+button {
+  @apply bg-navy-blue text-white;
+  cursor: pointer;
+}
