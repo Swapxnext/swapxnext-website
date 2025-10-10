@@ -4,17 +4,29 @@ import {
   IoLogoGooglePlaystore,
   IoShieldCheckmarkOutline,
 } from "react-icons/io5";
+import Lottie from "lottie-react";
+import { useEffect, useState } from "react";
 
 const HeroSection = () => {
+  const [animationData, setAnimationData] = useState(null);
+
+  useEffect(() => {
+    // Fetch the JSON animation data
+    fetch("/Scene-1.json")
+      .then((response) => response.json())
+      .then((data) => setAnimationData(data))
+      .catch((error) => console.error("Error loading animation:", error));
+  }, []);
+
   return (
-    <div className="bg-[url(/hero-bg.svg)] grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <div className="bg-[url(/hero-bg.svg)] grid grid-cols-1 lg:grid-cols-2 gap-5 px-5 lg:px-20 xl:px-30">
       <div>
         {/* smart finance smart living */}
         <div className="bg-[#F8F8F8] rounded-[100px] flex items-center justify-center gap-5 w-fit mx-auto lg:mx-0 mb-5 px-2 py-1">
           <div className="bg-white rounded-full p-2">
             <IoShieldCheckmarkOutline />
           </div>
-          <p className="text-[14px] lg:text-[16px] font-[300]">
+          <p className="text-[14px] lg:text-[16px] font-[400]">
             Smart Finance, Smart Living
           </p>
         </div>
@@ -35,7 +47,7 @@ const HeroSection = () => {
         </p>
         <div className="flex gap-[10px] mt-5 justify-center lg:justify-start">
           {/* App Store button  */}
-          <button className="flex items-center gap-[7px] border border-[#A6A6A6] rounded-[35px] px-4 lg:px-7 py-1">
+          <button className="bg-navy-blue text-white flex items-center gap-[7px] border border-[#A6A6A6] rounded-[35px] px-4 lg:px-7 py-1">
             <FaApple size={30} />
             <div className="flex flex-col gap-0 items-start">
               <p className="flex flex-col items-start leading-4 text-[12px] lg:text-[13px]">
@@ -46,7 +58,7 @@ const HeroSection = () => {
           </button>
 
           {/* Google Play button */}
-          <button className="flex items-center gap-[7px] border border-[#A6A6A6] rounded-[35px] px-4 lg:px-7 py-2">
+          <button className="bg-navy-blue text-white flex items-center gap-[7px] border border-[#A6A6A6] rounded-[35px] px-4 lg:px-7 py-2">
             <IoLogoGooglePlaystore size={30} />
             <div className="flex flex-col gap-0 items-start">
               <p className="flex flex-col items-start leading-4 text-[12px] lg:text-[13px]">
@@ -62,15 +74,15 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div>
-        <div className="relative">
-          <img
-            src="/bitcoin.gif"
-            alt="bitcoin gif"
-            loading="lazy"
-            className="absolute top-[20px] lg:top-0 lg:right-0 w-[100px]  xl:w-[200px]"
+      <div className="flex items-center justify-center">
+        {animationData && (
+          <Lottie
+            animationData={animationData}
+            loop={true}
+            autoplay={true}
+            className="w-full h-auto"
           />
-        </div>
+        )}
       </div>
     </div>
   );
