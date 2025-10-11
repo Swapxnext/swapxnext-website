@@ -23,7 +23,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="hidden lg:flex">
-        <button className="bg-navy-blue text-white text-[16px] px-5 py-1 rounded-[30px]">
+        <button className="bg-navy-blue text-white text-[16px] px-7 py-3 rounded-[30px]">
           Download
         </button>
       </div>

@@ -37,7 +37,7 @@ const Testimonials = () => {
 
   return (
     <div className="p-5 lg:p-20">
-      <div className="bg-[#F5FAFF] border border-[#E6EFFE] rounded-[20px] p-10 flex flex-col gap-5 items-center">
+      <div className="bg-[#F5FAFF] border border-[#E6EFFE] rounded-[20px] p-10 px-5 lg:px-10 lg:py-10 flex flex-col gap-5 items-center">
         <div className="lg:max-w-[40vw] space-y-5">
           <div className="flex items-center gap-2 bg-white p-3 py-2 rounded-full shadow-md w-fit mx-auto">
             <RiDoubleQuotesL size={20} />
@@ -64,8 +64,7 @@ const Testimonials = () => {
                 onClick={() => setActive(index)}
                 className={` rounded-full ${
                   index === active ? "" : "opacity-50"
-                } disabled:cursor-none`}
-              >
+                } disabled:cursor-none`}>
                 <img src={item.image} alt={item.name} width={50} height={50} />
               </button>
             ))}

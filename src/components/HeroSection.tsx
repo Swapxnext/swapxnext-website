@@ -19,7 +19,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="bg-[url(/hero-bg.svg)] grid grid-cols-1 lg:grid-cols-2 gap-5 px-5 lg:px-20 xl:px-30">
+    <div className="bg-[url(/hero-bg.svg)] h-full grid grid-cols-1 lg:grid-cols-2 gap-5 items-center px-5 lg:px-20 xl:px-30 overflow-hidden">
       <div>
         {/* smart finance smart living */}
         <div className="bg-[#F8F8F8] rounded-[100px] flex items-center justify-center gap-5 w-fit mx-auto lg:mx-0 mb-5 px-2 py-1">
@@ -66,23 +66,34 @@ const HeroSection = () => {
                 <span className="block font-bold text-[18px]">Google Play</span>
               </p>
             </div>
-            {/* <div className="flex flex-col gap-0 items-start">
-              <small className="text-[12px] lg:text-[14px]">GET IT ON</small>
-              <p>Google Play</p>
-            </div> */}
           </button>
         </div>
       </div>
-
-      <div className="flex items-center justify-center">
-        {animationData && (
-          <Lottie
-            animationData={animationData}
-            loop={true}
-            autoplay={true}
-            className="w-full h-auto"
-          />
-        )}
+      <div className="relative flex items-center justify-center">
+        <img
+          src="/bitcoin.gif"
+          alt="bitcoin"
+          loading="lazy"
+          className="absolute top-1/2 lg:top-0 left-0 lg:left-auto lg:right-0 z-40 block size-[65px] lg:size-[150px]"
+          fetchPriority="high"
+        />
+        <img
+          src="/phone-image.png"
+          alt="phone-image"
+          loading="lazy"
+          fetchPriority="high"
+          className="z-10 -mb-[110px] lg:mb-0 w-[250px] lg:w-[450px] h-auto"
+        />
+        <div className="absolute -bottom-[30px] lg:-bottom-20 z-40 right-0 lg:left-0 size-[170px] lg:size-[290px]">
+          {animationData && (
+            <Lottie
+              animationData={animationData}
+              loop={true}
+              autoplay={true}
+              className="w-full h-auto"
+            />
+          )}
+        </div>
       </div>
     </div>
   );
