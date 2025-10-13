@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
       <div className="h-10" />
 
       {/* Mobile View  */}
-      <div className="px-5">
+      <div className="px-5 block lg:hidden">
         <h5 className="text-[20px] font-semibold">
           {activeTab + 1}. {tabs[activeTab].title}
         </h5>
