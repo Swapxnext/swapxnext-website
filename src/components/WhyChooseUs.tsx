@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveTab((prevTab) => (prevTab + 1) % 4); // Loop through 4 tabs
-    }, 7000); // Change tab every 7 seconds
+    }, 6000); // Change tab every 6 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
@@ -43,7 +43,8 @@ const WhyChooseUs = () => {
   return (
     <div
       style={{ backgroundImage: `url('/Noise & Texture.svg')` }}
-      className="w-screen lg:px-40 lg:py-20 p-5">
+      className="w-screen lg:px-40 lg:py-20 p-5"
+    >
       <p className="text-center text-[12px] font-[400] lg:text-[16px] lg:font-[500] text-[#0A0F2C] bg-[#0A0F2C0D] rounded-[20px] w-fit mx-auto px-4 py-2 ">
         How it works
       </p>
@@ -53,7 +54,47 @@ const WhyChooseUs = () => {
       </h3>
       <div className="h-10" />
 
-      <div className="flex gap-[72px] ">
+      {/* Mobile View  */}
+      <div className="px-5">
+        <h5 className="text-[20px] font-semibold">
+          {activeTab + 1}. {tabs[activeTab].title}
+        </h5>
+        <p className="text-[16px] text-black font-medium mt-3">
+          {tabs[activeTab].description}
+        </p>
+        <p className="text-sm text-[#66707F] mt-3">{tabs[activeTab].sub}</p>
+        <button className="bg-navy-blue text-white text-[16px] px-7 py-3 rounded-[30px] flex items-center gap-3 mt-5">
+          Learn More
+          <ArrowRight />
+        </button>
+
+        {/* Phone mockup  */}
+        <div>
+          <img
+            key={`phone-${activeTab}`}
+            src={`/phone-${activeTab + 1}.png`}
+            alt={`phone-${activeTab + 1}`}
+            className="w-[500px] h-auto transition-opacity duration-500 animate-fadeIn"
+            fetchPriority="high"
+            loading="lazy"
+          />
+        </div>
+        <div className="flex items-center justify-center gap-[4px] mt-5">
+          {Array.from({ length: 4 }, (_, index) => (
+            <div
+              key={index}
+              className={`h-1 rounded-[20px] transition-all duration-300 ${
+                index === activeTab
+                  ? "w-[40px] bg-navy-blue"
+                  : "bg-gray-400 w-[11px]"
+              }`}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Desktop View   */}
+      <div className="gap-[72px] hidden lg:flex">
         {/* Phone mockup  */}
         <div>
           <img
@@ -76,7 +117,8 @@ const WhyChooseUs = () => {
                     ? "text-navy-blue border-b-2 border-navy-blue font-[600]"
                     : "text-[#66707F] border-b border-[#E4E7EC]"
                 }  p-5 text-center cursor-pointer`}
-                onClick={() => setActiveTab(index)}>
+                onClick={() => setActiveTab(index)}
+              >
                 {item.title}
               </div>
             ))}
@@ -84,12 +126,14 @@ const WhyChooseUs = () => {
           <div className="space-y-4">
             <h5
               key={activeTab}
-              className="text-[16px] lg:text-[32px] font-[500] lg:font-[600] transition-opacity duration-500 animate-fadeIn">
+              className="text-[16px] lg:text-[32px] font-[500] lg:font-[600] transition-opacity duration-500 animate-fadeIn"
+            >
               {tabs[activeTab].description}
             </h5>
             <p
               key={`sub-${activeTab}`}
-              className="text-[#66707F] text-[14px] lg:text-[16px] transition-opacity duration-500 animate-fadeIn">
+              className="text-[#66707F] text-[14px] lg:text-[16px] transition-opacity duration-500 animate-fadeIn"
+            >
               {tabs[activeTab].sub}
             </p>
             <button className="bg-navy-blue text-white text-[16px] px-7 py-3 rounded-[30px] flex items-center gap-3">
