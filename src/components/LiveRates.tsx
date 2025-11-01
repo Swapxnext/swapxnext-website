@@ -9,14 +9,12 @@ const LiveRates = () => {
         alt="Live Rates"
         className="h-auto w-full mt-5 lg:mt-10 hidden lg:block"
         fetchPriority="high"
-        loading="lazy"
       />
       <img
         src="/rates-mobile.png"
         alt="Live Rates"
         className="h-auto w-full mt-5 lg:mt-10 block lg:hidden"
         fetchPriority="high"
-        loading="lazy"
       />
       <p className="font-semibold text-[20px] lg:text-[36px] text-center mt-5">
         Live Exchange Rates
