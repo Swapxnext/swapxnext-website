@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
   // Auto-change tabs with interval
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveTab((prevTab) => (prevTab + 1) % 4); // Loop through 4 tabs
+      setActiveTab((prevTab) => (prevTab + 1) % 3); // Loop through 4 tabs
     }, 6000); // Change tab every 6 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
@@ -80,7 +80,7 @@ const WhyChooseUs = () => {
           />
         </div>
         <div className="flex items-center justify-center gap-[4px] mt-5">
-          {Array.from({ length: 4 }, (_, index) => (
+          {Array.from({ length: 3 }, (_, index) => (
             <div
               key={index}
               className={`h-1 rounded-[20px] transition-all duration-300 ${
