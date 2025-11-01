@@ -16,6 +16,10 @@ const HeroSection = () => {
       .then((response) => response.json())
       .then((data) => setAnimationData(data))
       .catch((error) => console.error("Error loading animation:", error));
+
+    fetch("/Scene-2.json")
+      .then((response) => response.json())
+      .catch((error) => console.error("Error loading animation:", error));
   }, []);
 
   return (
@@ -84,6 +88,14 @@ const HeroSection = () => {
           fetchPriority="high"
           className="z-10 -mb-[110px] lg:mb-0 w-[250px] lg:w-[450px] h-auto"
         />
+        {/* {phoneMockup && (
+          <Lottie
+            animationData={phoneMockup}
+            loop={true}
+            autoplay={true}
+            className="w-full h-auto"
+          />
+        )} */}
         <div className="absolute -bottom-[30px] lg:-bottom-20 z-40 right-0 lg:left-0 size-[170px] lg:size-[290px]">
           {animationData && (
             <Lottie

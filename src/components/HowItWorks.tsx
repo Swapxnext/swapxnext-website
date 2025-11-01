@@ -1,5 +1,3 @@
-import React from "react";
-
 const HowItWorks = () => {
   const steps = [
     {
@@ -36,7 +34,8 @@ const HowItWorks = () => {
         {steps.map((item, index) => (
           <div
             key={index}
-            className="border border-[#E7E7E7] rounded-[16px] p-5 space-y-5">
+            className="border border-[#E7E7E7] rounded-[16px] p-5 space-y-5"
+          >
             <img
               src={item.image}
               alt={item.title}

@@ -1,5 +1,3 @@
-import React from "react";
-
 const LiveRates = () => {
   return (
     <div className="bg-navy-blue text-white p-5 py-8 lg:p-40 lg:py-20">

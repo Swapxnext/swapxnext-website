@@ -1,5 +1,3 @@
-import React from "react";
-
 const Industries = () => {
   return (
     <div className="p-5 lg:px-50 lg:pt-20 overflow-hidden">
