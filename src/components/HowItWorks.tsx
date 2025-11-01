@@ -7,10 +7,10 @@ const HowItWorks = () => {
       image: "/Illustration-1.png",
     },
     {
-      title: "Enter Amount",
+      title: "Generate Wallet",
       description:
-        "Type in the amount you want to convert. We’ll instantly calculate how much you’ll receive in Naira based on real-time rates. No hidden charges, no surprises.",
-      image: "/Illustration-2.png",
+        "We create a unique wallet address for your transaction. Send only on the selected network, we auto detect the transfer and lock your rate after the first confirmation.",
+      image: "/step2.jpeg",
     },
     {
       title: "Receive Cash in Minutes",
@@ -43,7 +43,7 @@ const HowItWorks = () => {
               height={200}
               fetchPriority="high"
               loading="lazy"
-              className="mx-auto"
+              className="mx-auto h-[200px]"
             />
             <div className="flex items-center gap-4">
               <p className="text-white bg-navy-blue size-[32px] flex items-center justify-center px-2 rounded-full">

@@ -2,7 +2,7 @@ const LiveRates = () => {
   return (
     <div className="bg-navy-blue text-white p-5 py-8 lg:p-40 lg:py-20">
       <p className="text-center text-[12px] font-[400] lg:text-[16px] lg:font-[500] bg-[white] text-[#0A0F2C] rounded-[20px] w-fit mx-auto px-4 py-2 ">
-        Today’s Rates
+        Today&apos;s Rates
       </p>
       <img
         src="/rates.png"

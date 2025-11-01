@@ -20,12 +20,12 @@ const WhyChooseUs = () => {
         "Experience Lightning-Fast Payouts Straight to Your Bank, No Wallet Setup Required",
       sub: "Once your crypto is confirmed, we process your naira payout within minutes. No need to create or manage a digital wallet, just convert and get paid directly into your Nigerian bank account, hassle-free.",
     },
-    {
-      title: "Tiered KYC",
-      description:
-        "Upgrade Your Limits with Simple, Tier-Based KYC That Works for Everyone",
-      sub: "Whether you’re a casual user or a high-volume trader, our flexible KYC tiers adapt to your needs. Start with just your name and phone number, and unlock higher transaction limits with basic ID and address verification.",
-    },
+    // {
+    //   title: "Tiered KYC",
+    //   description:
+    //     "Upgrade Your Limits with Simple, Tier-Based KYC That Works for Everyone",
+    //   sub: "Whether you’re a casual user or a high-volume trader, our flexible KYC tiers adapt to your needs. Start with just your name and phone number, and unlock higher transaction limits with basic ID and address verification.",
+    // },
     {
       title: "Competitive Rates",
       description:
