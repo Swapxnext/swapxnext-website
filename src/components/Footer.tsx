@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -65,7 +66,9 @@ const Footer = () => {
               <p className="text-[18px] font-[600] mb-3">Legal</p>
               <ul className="space-y-3 font-[300]">
                 <li>Terms of Service</li>
-                <li>Privacy Policy</li>
+                <li>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
+                </li>
               </ul>
             </div>
           </div>
