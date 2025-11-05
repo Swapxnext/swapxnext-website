@@ -76,7 +76,6 @@ const WhyChooseUs = () => {
             alt={`phone-${activeTab + 1}`}
             className="w-[500px] h-auto transition-opacity duration-500 animate-fadeIn"
             fetchPriority="high"
-            loading="lazy"
           />
         </div>
         <div className="flex items-center justify-center gap-[4px] mt-5">
@@ -103,7 +102,6 @@ const WhyChooseUs = () => {
             alt={`phone-${activeTab + 1}`}
             className="w-[500px] h-auto transition-opacity duration-500 animate-fadeIn"
             fetchPriority="high"
-            loading="lazy"
           />
         </div>
         {/* Steps */}
