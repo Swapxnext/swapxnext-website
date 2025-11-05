@@ -41,7 +41,9 @@ const Footer = () => {
             <div>
               <p className="text-[18px] font-[500] mb-3">Navigation</p>
               <ul className="space-y-3 font-[300]">
-                <li>Home</li>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
                 <li>Rates</li>
                 <li>Support</li>
               </ul>
@@ -58,7 +60,9 @@ const Footer = () => {
               <p className="text-[18px] font-[600] mb-3">Contact</p>
               <ul className="space-y-3 font-[300]">
                 <li>Chat with us</li>
-                <li>Send Email</li>
+                <li>
+                  <a href="mailto:hello@swapxnext.com">Send Email</a>
+                </li>
                 <li>Call us</li>
               </ul>
             </div>

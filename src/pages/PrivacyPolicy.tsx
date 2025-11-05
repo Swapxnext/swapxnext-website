@@ -1,10 +1,6 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-
 const PrivacyPolicy = () => {
   return (
     <>
-      <Navbar />
       <div className="styles_privacyPolicy__M4vnf">
         <div className="py-12">
           <div className=" mx-auto px-4">
@@ -422,8 +418,6 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

@@ -4,12 +4,16 @@ const LiveRates = () => {
       <p className="text-center text-[12px] font-[400] lg:text-[16px] lg:font-[500] bg-[white] text-[#0A0F2C] rounded-[20px] w-fit mx-auto px-4 py-2 ">
         Today&apos;s Rates
       </p>
-        <img src="/rates.jpg" alt="" className="hidden lg:block w-full h-auto" />
-        <img
-          src="/rates-mobile.jpg"
-          alt=""
-          className="lg:hidden w-full h-auto"
-        />
+      <img
+        src="/rates.jpg"
+        alt=""
+        className="hidden lg:block w-full h-auto rounded-2xl mt-5"
+      />
+      <img
+        src="/rates-mobile.jpg"
+        alt=""
+        className="lg:hidden w-full h-auto rounded-lg mt-5"
+      />
       <p className="font-semibold text-[20px] lg:text-[36px] text-center mt-5">
         Live Exchange Rates
       </p>
