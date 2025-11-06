@@ -20,7 +20,7 @@ const HowItWorks = () => {
     },
   ];
   return (
-    <div className="p-5 lg:p-40 lg:pt-10">
+    <div id="how-it-works" className="p-5 lg:p-40 lg:pt-10">
       <p className="text-center text-[12px] font-[400] lg:text-[16px] lg:font-[500] text-[#0A0F2C] bg-[#0A0F2C0D] rounded-[20px] w-fit mx-auto px-4 py-2 ">
         How it works
       </p>

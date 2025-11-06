@@ -49,6 +49,11 @@ body {
   font-family: var(--font-geist);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--navbar-height, 100px);
+}
+
 button {
   /* @apply bg-navy-blue text-white; */
   cursor: pointer;

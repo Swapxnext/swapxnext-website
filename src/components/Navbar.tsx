@@ -3,8 +3,8 @@ import { HiMenuAlt3 } from "react-icons/hi";
 const Navbar = () => {
   const links = [
     { name: "Home", url: "/" },
-    { name: "How it works", url: "/" },
-    { name: "FAQs", url: "/" },
+    { name: "How it works", url: "#how-it-works" },
+    { name: "FAQs", url: "#faqs" },
     { name: "Blog", url: "/" },
   ];
 

@@ -7,7 +7,7 @@ import {
 
 const FAQ = () => {
   return (
-    <div className="my-10 grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 px-10 lg:px-40">
+    <div id="faqs" className="my-10 grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 px-10 lg:px-40">
       <div className="lg:w-[70%] space-y-5">
         <div className="text-navy-blue text-[16px] font-[500] bg-[#0A0F2C08] px-2 py-1 rounded-[12px] w-fit">
           Got Questions?

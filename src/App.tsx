@@ -7,6 +7,7 @@ import {
 import { lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 const Home = lazy(() => import("./pages/Home"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
@@ -15,6 +16,7 @@ const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <InnerApp />
     </Router>
   );
