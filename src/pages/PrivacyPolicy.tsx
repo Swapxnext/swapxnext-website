@@ -2,7 +2,7 @@ const PrivacyPolicy = () => {
   return (
     <>
       <div className="styles_privacyPolicy__M4vnf">
-        <div className="py-12">
+        <div>
           <div className=" mx-auto px-4">
             <div className="space-y-3">
               <h1 className="!text-5xl font-bold text-center">
@@ -58,7 +58,8 @@ const PrivacyPolicy = () => {
             </li>
             <li>
               <strong>Company</strong> (referred to as either "the Company",
-              "We", "Us" or "Our" in this Agreement) refers to Swapxnext.
+              "We", "Us" or "Our" in this Agreement) refers to SWAPXNEXT LTD,
+              27, PLOT, AUCHI, EDO STATE, NIGERIA.
             </li>
             <li>
               <strong>Country</strong> refers to: Nigeria
@@ -113,6 +114,7 @@ const PrivacyPolicy = () => {
           <ul className="list-disc list-inside mb-4 space-y-2">
             <li>Email address</li>
             <li>First name and last name</li>
+            <li>Phone number</li>
             <li>Usage Data</li>
           </ul>
 
@@ -358,6 +360,49 @@ const PrivacyPolicy = () => {
             commercially acceptable means to protect Your Personal Data, We
             cannot guarantee its absolute security.
           </p>
+          <h2 className="text-3xl font-bold mt-6 mb-2">
+            Detailed Information on the Processing of Your Personal Data
+          </h2>
+          <p className="mb-4">
+            The Service Providers We use may have access to Your Personal Data.
+            These third-party vendors collect, store, use, process and transfer
+            information about Your activity on Our Service in accordance with
+            their Privacy Policies.
+          </p>
+          <h3>Email Marketing</h3>
+          <p className="mb-4">
+            We may use Your Personal Data to contact You with newsletters,
+            marketing or promotional materials and other information that may be
+            of interest to You. You may opt-out of receiving any, or all, of
+            these communications from Us by following the unsubscribe link or
+            instructions provided in any email We send or by contacting Us.
+          </p>
+          <p className="mb-4">
+            We may use Email Marketing Service Providers to manage and send
+            emails to You.
+          </p>
+          <ul>
+            <li>
+              <strong>MailChimp</strong>
+              <span className="block mb-4">
+                Mailchimp is an email marketing sending service provided by The
+                Rocket Science Group LLC.
+              </span>
+              <span>
+                For more information on the privacy practices of Mailchimp,
+                please visit their Privacy policy:{" "}
+                <a
+                  href="https://mailchimp.com/legal/privacy/"
+                  className="text-blue-500 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://mailchimp.com/legal/privacy/
+                </a>
+              </span>
+            </li>
+          </ul>
+
           <h2 className="text-3xl font-bold mt-6 mb-2">Children's Privacy</h2>
           <p className="mb-4">
             Our Service does not address anyone under the age of 13. We do not
@@ -409,10 +454,12 @@ const PrivacyPolicy = () => {
             <li>
               By email:{" "}
               <a
-                href="mailto:hello@swapxnext.com"
+                href="mailto:info@swapxnext.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-500 hover:underline"
               >
-                hello@swapxnext.com
+                info@swapxnext.com
               </a>
             </li>
           </ul>

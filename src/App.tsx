@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 
 const Home = lazy(() => import("./pages/Home"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function InnerApp() {
       <Routes location={location}>
         <Route path="/" element={<Home />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
       <Footer />
     </Suspense>

@@ -69,7 +69,9 @@ const Footer = () => {
             <div>
               <p className="text-[18px] font-[600] mb-3">Legal</p>
               <ul className="space-y-3 font-[300]">
-                <li>Terms of Service</li>
+                <li>
+                  <Link to="terms-of-service">Terms of Service</Link>
+                </li>
                 <li>
                   <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
