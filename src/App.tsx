@@ -27,11 +27,11 @@ function InnerApp() {
 
   return (
     <Suspense
-      fallback={
-        <div className="h-screen w-screen flex items-center justify-center">
-          Loading...
-        </div>
-      }
+    // fallback={
+    //   <div className="h-screen w-screen flex items-center justify-center">
+    //     Loading...
+    //   </div>
+    // }
     >
       <Navbar />
       <Routes location={location}>
