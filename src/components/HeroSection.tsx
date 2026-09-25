@@ -1,6 +1,6 @@
-import { FaApple } from "react-icons/fa";
+// import { FaApple } from "react-icons/fa";
 import {
-  IoLogoGooglePlaystore,
+  // IoLogoGooglePlaystore,
   IoShieldCheckmarkOutline,
 } from "react-icons/io5";
 import Lottie from "lottie-react";
@@ -42,8 +42,8 @@ const HeroSection = () => {
           Fast, secure, and seamless crypto-to-naira conversion. No wallet
           required, straight to your bank account.
         </p>
-        <div className="flex gap-[10px] mt-5 justify-center lg:justify-start">
-          {/* App Store button  */}
+        {/* App Store & Google Play buttons */}
+        {/* <div className="flex gap-[10px] mt-5 justify-center lg:justify-start">
           <button className="bg-navy-blue text-white flex items-center gap-[7px] border border-[#A6A6A6] rounded-[35px] px-4 lg:px-7 py-1">
             <FaApple size={30} />
             <div className="flex flex-col gap-0 items-start">
@@ -54,7 +54,6 @@ const HeroSection = () => {
             </div>
           </button>
 
-          {/* Google Play button */}
           <button className="bg-navy-blue text-white flex items-center gap-[7px] border border-[#A6A6A6] rounded-[35px] px-4 lg:px-7 py-2">
             <IoLogoGooglePlaystore size={30} />
             <div className="flex flex-col gap-0 items-start">
@@ -64,7 +63,7 @@ const HeroSection = () => {
               </p>
             </div>
           </button>
-        </div>
+        </div> */}
       </div>
       <div className="relative flex items-center justify-center">
         <img
