@@ -1,6 +1,5 @@
 import { FaApple } from "react-icons/fa";
 import {
-  IoHeartSharp,
   IoLogoGooglePlaystore,
   IoShieldCheckmarkOutline,
 } from "react-icons/io5";
@@ -33,12 +32,6 @@ const HeroSection = () => {
           <p className="text-[14px] lg:text-[16px] font-[400]">
             Smart Finance, Smart Living
           </p>
-        </div>
-
-        <div className="flex items-center gap-2 mb-3 justify-center lg:justify-start">
-          <img src="/avatars.png" alt="avatars" width={80} height={80} />
-          <IoHeartSharp color="#0A0F2C" size={20} />
-          <p className="text-[#171717] text-[14px]">Loved by 12k+ users</p>
         </div>
 
         <h1 className="text-navy-blue text-[32px] lg:text-[54px] font-bold leading-[100%] text-center lg:text-left">

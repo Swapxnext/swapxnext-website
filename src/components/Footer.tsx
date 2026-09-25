@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -21,18 +17,24 @@ const Footer = () => {
               that allows you to convert supported cryptocurrencies
             </p>
             <div className="flex items-center gap-[20px]">
-              <div className="h-[45px] w-[45px] flex items-center justify-center rounded-full border-2 border-gray-500">
-                <FaLinkedinIn />
-              </div>
-              <div className="h-[45px] w-[45px] flex items-center justify-center rounded-full border-2 border-gray-500">
-                <FaFacebookF />
-              </div>
-              <div className="h-[45px] w-[45px] flex items-center justify-center rounded-full border-2 border-gray-500">
+              <a
+                href="https://x.com/swapxnext_ng?s=11"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
+                className="h-[45px] w-[45px] flex items-center justify-center rounded-full border-2 border-gray-500 hover:border-white transition-colors"
+              >
+                <FaXTwitter size={18} />
+              </a>
+              <a
+                href="https://www.instagram.com/swapxnext?stkn=cjZ2a2N3aGpmdW0z"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="h-[45px] w-[45px] flex items-center justify-center rounded-full border-2 border-gray-500 hover:border-white transition-colors"
+              >
                 <FaInstagram size={18} />
-              </div>
-              <div className="h-[45px] w-[45px] flex items-center justify-center rounded-full border-2 border-gray-500">
-                <FaYoutube />
-              </div>
+              </a>
             </div>
           </div>
 
@@ -59,11 +61,19 @@ const Footer = () => {
             <div>
               <p className="text-[18px] font-[600] mb-3">Contact</p>
               <ul className="space-y-3 font-[300]">
-                <li>Chat with us</li>
                 <li>
-                  <a href="mailto:hello@swapxnext.com">Send Email</a>
+                  <a
+                    href="mailto:Info@swapxnext.com"
+                    className="hover:underline"
+                  >
+                    Info@swapxnext.com
+                  </a>
                 </li>
-                <li>Call us</li>
+                <li>
+                  <a href="tel:07018275249" className="hover:underline">
+                    07018275249
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
