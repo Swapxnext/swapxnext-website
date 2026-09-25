@@ -6,7 +6,7 @@ const Navbar = () => {
     { name: "Home", url: "/" },
     { name: "How it works", url: "#how-it-works" },
     { name: "FAQs", url: "#faqs" },
-    { name: "Blog", url: "/" },
+    // { name: "Blog", url: "/" },
   ];
 
   return (

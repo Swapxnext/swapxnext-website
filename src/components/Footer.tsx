@@ -55,7 +55,7 @@ const Footer = () => {
               <ul className="space-y-3 font-[300]">
                 <li>About Us</li>
                 <li>Careers</li>
-                <li>Blog</li>
+                {/* <li>Blog</li> */}
               </ul>
             </div>
             <div>
